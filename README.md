@@ -5,7 +5,7 @@
 
 ## Installation
 - ```bash
-git clone https://github.com/username/repo-name.git
+ https://github.com/sajadnezamabadi/Todo_DRF.git
 cd repo-name
 
 python -m venv venv
