@@ -12,7 +12,7 @@ from .serializers import TaskSerialiazer
 class TaskListAPIView(ListCreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = TaskSerialiazer
-    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
     filterset_fields = ['completed','due_date','created_at'] 
     ordering_fields = ['created_at']  
     ordering = ['created_at']    
